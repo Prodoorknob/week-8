@@ -3,7 +3,8 @@ import numpy as np
 
 class MarkovText(object):
 
-    def __init__(self, corpus, k):
+    def __init__(self, corpus):
+        k=1
         self.corpus = corpus
         self.k = int(k)
         if self.k < 1:
